@@ -387,18 +387,6 @@
                     <exclude>META-INF/LICENSE</exclude>
                   </excludes>
                 </filter>
-                <filter>
-                  <artifact>io.jexxa:jexxa-core</artifact>
-                  <excludes>
-                    <exclude>*.properties</exclude>
-                  </excludes>
-                </filter>
-                <filter>
-                  <artifact>io.jexxa:jexxa-core</artifact>
-                  <excludes>
-                    <exclude>*.properties</exclude>
-                  </excludes>
-                </filter>
 
                 <filter>
                   <artifact>org.eclipse.jetty:*</artifact>
