@@ -1,7 +1,7 @@
-[![Maven Test Build](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/mavenBuild.yml)
-[![New Release](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/JexxaTemplate/actions/workflows/newRelease.yml)
+[![Maven Test Build](https://github.com/jexxa-projects/MavenTemplate/actions/workflows/mavenBuild.yml/badge.svg)](https://github.com/jexxa-projects/MavenTemplate/actions/workflows/mavenBuild.yml)
+[![New Release](https://github.com/jexxa-projects/MavenTemplate/actions/workflows/newRelease.yml/badge.svg)](https://github.com/jexxa-projects/MavenTemplate/actions/workflows/newRelease.yml)
 
-# JexxaTemplate
+# MavenTemplate
 This template can be used to start your own Jexxa application 
 
 ## Requirements
@@ -9,27 +9,20 @@ This template can be used to start your own Jexxa application
 *   Java 17+ installed
 *   IDE with maven support 
 *   [Optional] Docker or Kubernetes if you want to run your application in a container. See [here](README-CICD.md) for more information.   
-*   [Optional] A locally running [developer stack](deploy/developerStack.yml) providing a Postgres database, ActiveMQ broker, and Swagger-UI 
+
 
 ## Features
 
-*   Build your first Jexxa-project as self-contained jar and/or docker image
-    
-*   Template for [Unit-](src/test/java/io/jexxa/jexxatemplate/domain/book/BookTest.java), [Stub-](src/test/java/io/jexxa/jexxatemplate/applicationservice/BookStoreServiceTest.java) and [Integration tests](src/test/java/io/jexxa/jexxatemplate/integration/JexxaTemplateIT.java)
-
-*   Predefined architectural tests for: 
-    *   [Pattern Language](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate the correct annotation of your application using project [Addend](http://addend.jexxa.io/) 
-    *   [Ports&Adapters Architecture](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validates dependencies between packages of your application
-    *   [Usage of Aggregates](src/test/java/io/jexxa/jexxatemplate/architecture/ArchitectureTest.java) to validate that your business logic is not exposed
-
-*   Predefined CI/CD pipeline for GitHub including automatic dependency updates 
+*   Build your project as self-contained jar and/or docker image
+  
+* Predefined CI/CD pipeline for GitHub including automatic dependency updates 
  
 ## Create new Project from Template
 
 *   In GitHub press `Use this template` (requires GitHub account) or fork the project. If you do not have a GitHub account you can just clone the repository. 
 
 *   Enter a `project name` for the repository. This template uses following convention:
-    *   Project name should be written in camel case notation, such as `JexxaTemplate`
+    *   Project name should be written in camel case notation, such as `MavenTemplate`
     *   Project name of the repository is equal to the name of the java application
 
 ## Build the Project
@@ -68,7 +61,7 @@ This template can be used to start your own Jexxa application
 
 ### Adjust Project Name
 
-Rename `JexxaTemplate` to your own applications name, as described [here](README-ProjectName.md). 
+Rename `MavenTemplate` to your own applications name, as described [here](README-ProjectName.md). 
 
 ### Set up the CI/CD Pipeline  
 

@@ -7,14 +7,14 @@
   <!-- **************************************************************************** -->
   <!-- TODO (REQUIRED): Change your project name, groupId, artifactId, ... here.    -->
   <!-- **************************************************************************** -->
-  <name>JexxaTemplate</name>
-  <groupId>io.jexxa.jexxatemplate</groupId>
-  <artifactId>jexxatemplate</artifactId>
-  <version>2.0.16-SNAPSHOT</version>
+  <name>MavenTemplate</name>
+  <groupId>io.jexxa.maventemplate</groupId>
+  <artifactId>maventemplate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 
   <url>https://www.jexxa.io</url>
 
-  <description>JexxaTemplate - Create your own Jexxa Application</description>
+  <description>MavenTemplate - GitHub related maven template </description>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -32,9 +32,9 @@
   <!-- TODO (REQUIRED): Change the scm section to include correct repository.       -->
   <!-- **************************************************************************** -->
   <scm>
-    <connection>scm:git:https://github.com/jexxa-projects/JexxaTemplate.git</connection>
-    <url>https://github.com/jexxa-projects/JexxaTemplate</url>
-    <developerConnection>scm:git:https://github.com/jexxa-projects/JexxaTemplate.git</developerConnection>
+    <connection>scm:git:https://github.com/jexxa-projects/MavenTemplate.git</connection>
+    <url>https://github.com/jexxa-projects/MavenTemplate</url>
+    <developerConnection>scm:git:https://github.com/jexxa-projects/MavenTemplate.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -57,12 +57,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
 
-    <!-- version of dependencies -->
-    <jexxa.release.version>5.6.0</jexxa.release.version>
-    <addend.version>2.0.0</addend.version>
-    <activemq.artemis.client.version>2.27.1</activemq.artemis.client.version>
-    <postgres.version>42.5.1</postgres.version>
-    <slf4j.simple.version>2.0.6</slf4j.simple.version>
+    <!-- **************************************************************************** -->
+    <!-- TODO (REQUIRED): Add version of dependencies here                            -->
+    <!-- **************************************************************************** -->
 
     <!-- version of test dependencies -->
     <junit.platform.launcher.version>1.9.2</junit.platform.launcher.version>
@@ -107,40 +104,12 @@
    </context.command.start>
 </properties>
 
-  <!-- ********************************************************* -->
-  <!-- TODO (OPTIONAL): Add additional dependencies if required  -->
-  <!-- ********************************************************* -->
   <dependencies>
     <!-- dependencies for application core -->
-    <dependency>
-      <groupId>io.jexxa</groupId>
-      <artifactId>jexxa-web</artifactId>
-      <version>${jexxa.release.version}</version>
-    </dependency>
 
-    <dependency>
-      <groupId>io.jexxa.addend</groupId>
-      <artifactId>Addend</artifactId>
-      <version>${addend.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>${slf4j.simple.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>${postgres.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.activemq</groupId>
-      <artifactId>artemis-jms-client</artifactId>
-      <version>${activemq.artemis.client.version}</version>
-    </dependency>
+    <!-- ********************************************************* -->
+    <!-- TODO (OPTIONAL): Add additional dependencies if required  -->
+    <!-- ********************************************************* -->
 
 
     <!-- *************************************** -->
@@ -164,27 +133,6 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <version>${junit.jupiter.params.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>io.jexxa.jexxatest</groupId>
-      <artifactId>jexxa-test</artifactId>
-      <version>${jexxa.release.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.awaitility</groupId>
-      <artifactId>awaitility</artifactId>
-      <version>${awaitility.version}</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.konghq</groupId>
-      <artifactId>unirest-java</artifactId>
-      <version>${unirest.java.version}</version>
       <scope>test</scope>
     </dependency>
 
