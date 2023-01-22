@@ -81,5 +81,3 @@ In this file, we highlight only the following two aspects:
   case of a rolling update, a new release is only deployed, if this method returns true within the defined period of time.
   If this call fails, the old version remains active.
 
-* **Handling of secrets:** In general, Jexxa provides dedicated properties to read credentials from a file as described
-  [here](https://jexxa-projects.github.io/Jexxa/jexxa_reference.html#_secrets). This allows you to dynamically hand in credentials such as a keystore, or a password into a container as files. For local development, you can define some dummy secrets in [jexxa-test.properties](src/test) such as a self-signed certificate. For simplicity reason we define the remaining secrets directly in jexxa-application.properties which is not recommended for production use.
